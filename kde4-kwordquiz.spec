@@ -3,16 +3,17 @@
 
 Summary:	K Desktop Environment - A flashcard and vocabulary learning program
 Summary(pl_PL.UTF8):	K Desktop Environment - Program do ćwiczenia słownictwa za pomocą pokazywania kart
-Name:		kwordquiz
-Version:	4.7.3
+Name:		kde4-kwordquiz
+Version:	4.8.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Science
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	ee548c2d08c7d4de329a20234e70cb41
+# Source0-md5:	dc68a189fb8988f7889f29cc091c3de7
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 Obsoletes:	kde4-kdeedu-kwordquiz < 4.6.99
+Obsoletes:	kwordquiz <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -68,12 +69,12 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	kde_htmldir=%{_kdedocdir}
 
-%find_lang %{name} --with-kde
+%find_lang %{orgname} --with-kde
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files -f %{name}.lang
+%files -f %{orgname}.lang
 %defattr(644,root,root,755)
 %{_datadir}/apps/kwordquiz
 %attr(755,root,root) %{_bindir}/kwordquiz
