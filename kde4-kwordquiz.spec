@@ -2,7 +2,7 @@
 %define		orgname		kwordquiz
 
 Summary:	K Desktop Environment - A flashcard and vocabulary learning program
-Summary(pl_PL.UTF8):	K Desktop Environment - Program do ćwiczenia słownictwa za pomocą pokazywania kart
+Summary(pl.UTF-8):	K Desktop Environment - Program do ćwiczenia słownictwa za pomocą pokazywania kart
 Name:		kde4-kwordquiz
 Version:	4.9.1
 Release:	1
